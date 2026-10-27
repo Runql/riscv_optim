@@ -1994,6 +1994,11 @@ to relative improvement (%) or estimated real-time headroom.</p>
 <td><code>fft30_riscv</code></td>
 <td>RVV</td>
 </tr>
+<tr>
+<td><code>processEstimateGlobalGain_fx</code></td>
+<td>inner loop → <code>estimate_gain_energy_hr_riscv</code></td>
+<td>RVV</td>
+</tr>
 </tbody>
 </table>
 <br>
@@ -2011,8 +2016,7 @@ TOTAL                                              1,944,891,217  100.00%
 
 __clzdi2                                            140,527,534    7.23%
 processAriDecoder_fx                                124,252,247    6.39%
-<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                91,548,420    4.71%</span><span class="hs-hl-row" style="background:hsla(40,70%,50%,0.15);border-left:3px solid hsl(40,70%,35%)">Mpy_32_32_0                                          86,669,544    4.46%</span><span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                                80,115,716    4.12%</span><span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               74,832,790    3.85%</span><span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                      68,937,459    3.54%</span><span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     65,418,004    3.36%</span>processEstimateGlobalGain_fx                         58,753,828    3.02%
-main                                                 52,600,634    2.70%
+<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                91,548,420    4.71%</span><span class="hs-hl-row" style="background:hsla(40,70%,50%,0.15);border-left:3px solid hsl(40,70%,35%)">Mpy_32_32_0                                          86,669,544    4.46%</span><span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                                80,115,716    4.12%</span><span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               74,832,790    3.85%</span><span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                      68,937,459    3.54%</span><span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     65,418,004    3.36%</span><span class="hs-hl-row" style="background:hsla(8,70%,50%,0.15);border-left:3px solid hsl(8,70%,35%)">processEstimateGlobalGain_fx                         58,753,828    3.02%</span>main                                                 52,600,634    2.70%
 fft15                                                48,282,544    2.48%
 processPerBandEnergy_fx                              46,655,323    2.40%
 processTnsCoder_fx                                   41,064,096    2.11%
@@ -2342,8 +2346,7 @@ TOTAL                                              1,900,152,882  100.00%
 
 __clzdi2                                            140,527,534    7.40%
 processAriDecoder_fx                                125,526,179    6.61%
-<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                91,548,420    4.82%</span><span class="hs-hl-row" style="background:hsla(40,70%,50%,0.15);border-left:3px solid hsl(40,70%,35%)">Mpy_32_32_0                                          86,669,544    4.56%</span><span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                                80,115,716    4.22%</span><span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               74,832,790    3.94%</span><span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                      69,850,998    3.68%</span><span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     65,418,004    3.44%</span>processEstimateGlobalGain_fx                         58,752,818    3.09%
-main                                                 52,600,895    2.77%
+<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                91,548,420    4.82%</span><span class="hs-hl-row" style="background:hsla(40,70%,50%,0.15);border-left:3px solid hsl(40,70%,35%)">Mpy_32_32_0                                          86,669,544    4.56%</span><span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                                80,115,716    4.22%</span><span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               74,832,790    3.94%</span><span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                      69,850,998    3.68%</span><span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     65,418,004    3.44%</span><span class="hs-hl-row" style="background:hsla(8,70%,50%,0.15);border-left:3px solid hsl(8,70%,35%)">processEstimateGlobalGain_fx                         58,752,818    3.09%</span>main                                                 52,600,895    2.77%
 fft15                                                48,282,544    2.54%
 processPerBandEnergy_fx                              45,629,094    2.40%
 processTnsCoder_fx                                   41,064,440    2.16%
@@ -2667,79 +2670,78 @@ __wrap_main                                                   1    0.00%
 </pre></div><div class="hs-col"><div class="hs-label">Only RVV</div><pre class="hs-pre">
 Function                                                  Count        %
 -------------------------------------------------------------------------
-TOTAL                                              1,492,937,629  100.00%
+TOTAL                                              1,466,682,866  100.00%
 -------------------------------------------------------------------------
 
-__clzdi2                                            140,415,971    9.41%
-processAriDecoder_fx                                125,756,999    8.42%
-<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                                61,559,814    4.12%</span>fft15                                                55,315,680    3.71%
-processEstimateGlobalGain_fx                         54,710,261    3.66%
-main                                                 52,600,877    3.52%
-processTnsCoder_fx                                   40,808,775    2.73%
-processAriEncoder_fx                                 40,066,509    2.68%
-processPerBandEnergy_fx                              38,389,338    2.57%
-_IO_fwrite                                           37,767,366    2.53%
-process_ltpf_coder_fx                                37,663,135    2.52%
-read_bit                                             31,443,773    2.11%
-process_deterministic_curve                          31,236,698    2.09%
-residual_encoder_lossless                            30,701,855    2.06%
-intMdct2_fx                                          30,216,170    2.02%
-residual_decoder_lossless                            28,397,593    1.90%
-&lt;unknown&gt;                                            26,012,445    1.74%
-invIntMdct2_fx                                       25,594,410    1.71%
-BASOP_Util_Log2                                      25,381,200    1.70%
-_IO_fread                                            24,694,404    1.65%
-_IO_file_xsgetn                                      23,729,793    1.59%
-lifting65                                            23,296,206    1.56%
-processQuantizeSpec_fx                               22,493,859    1.51%
-__memcpy_generic                                     21,443,050    1.44%
-invIntDCT4_fx.constprop.0                            20,633,290    1.38%
-_IO_new_file_xsputn                                  19,989,090    1.34%
-intDCT4_fx.isra.0                                    19,286,960    1.29%
-BASOP_Util_Add_Mant32Exp                             19,228,493    1.29%
-<span class="hs-hl-row" style="background:hsla(0,70%,50%,0.15);border-left:3px solid hsl(0,70%,35%)">processMdctShaping_fx                                17,903,284    1.20%</span>lifting32                                            17,660,860    1.18%
-Dec_LC3_Channel                                      15,800,024    1.06%
-<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               14,440,980    0.97%</span>ac_decode_fx.constprop.0                             14,100,909    0.94%
-processSnsQuantizeScfEncoder_fx                      13,751,068    0.92%
-<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                13,134,040    0.88%</span>lifting4                                             13,056,170    0.87%
-ac_dec_update_fx                                     12,636,547    0.85%
-ac_encode_fx                                         11,317,408    0.76%
-Enc_LC3_Channel                                      11,189,230    0.75%
-BASOP_Util_Log2_16                                   11,022,234    0.74%
-lifting7                                             10,479,098    0.70%
-ReadWavShort.constprop.0.isra.0                      10,207,381    0.68%
-lifting8                                             10,032,306    0.67%
-invFixp                                               9,063,840    0.61%
-BASOP_Util_InvLog2_pos                                8,662,328    0.58%
-calculate_active_bits                                 8,518,582    0.57%
+__clzdi2                                            135,858,872    9.26%
+processAriDecoder_fx                                125,756,999    8.57%
+<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                                61,559,814    4.20%</span>fft15                                                55,315,680    3.77%
+main                                                 52,600,877    3.59%
+processTnsCoder_fx                                   40,808,775    2.78%
+processAriEncoder_fx                                 40,066,509    2.73%
+processPerBandEnergy_fx                              38,389,338    2.62%
+_IO_fwrite                                           37,767,366    2.58%
+process_ltpf_coder_fx                                37,663,135    2.57%
+read_bit                                             31,443,773    2.14%
+process_deterministic_curve                          31,236,698    2.13%
+<span class="hs-hl-row" style="background:hsla(8,70%,50%,0.15);border-left:3px solid hsl(8,70%,35%)">processEstimateGlobalGain_fx                         30,907,854    2.11%</span>residual_encoder_lossless                            30,701,855    2.09%
+intMdct2_fx                                          30,216,170    2.06%
+residual_decoder_lossless                            28,397,593    1.94%
+&lt;unknown&gt;                                            26,048,474    1.78%
+invIntMdct2_fx                                       25,594,410    1.75%
+BASOP_Util_Log2                                      25,381,200    1.73%
+_IO_fread                                            24,694,404    1.68%
+_IO_file_xsgetn                                      23,729,793    1.62%
+lifting65                                            23,296,206    1.59%
+processQuantizeSpec_fx                               22,493,859    1.53%
+__memcpy_generic                                     21,443,050    1.46%
+invIntDCT4_fx.constprop.0                            20,633,290    1.41%
+_IO_new_file_xsputn                                  19,989,090    1.36%
+intDCT4_fx.isra.0                                    19,286,960    1.32%
+BASOP_Util_Add_Mant32Exp                             19,228,493    1.31%
+<span class="hs-hl-row" style="background:hsla(0,70%,50%,0.15);border-left:3px solid hsl(0,70%,35%)">processMdctShaping_fx                                17,903,284    1.22%</span>lifting32                                            17,660,860    1.20%
+Dec_LC3_Channel                                      15,800,024    1.08%
+<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               14,440,980    0.98%</span>ac_decode_fx.constprop.0                             14,100,909    0.96%
+processSnsQuantizeScfEncoder_fx                      13,751,068    0.94%
+<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                13,134,040    0.90%</span>lifting4                                             13,056,170    0.89%
+ac_dec_update_fx                                     12,636,547    0.86%
+ac_encode_fx                                         11,317,408    0.77%
+Enc_LC3_Channel                                      11,189,230    0.76%
+BASOP_Util_Log2_16                                   11,022,234    0.75%
+lifting7                                             10,479,098    0.71%
+ReadWavShort.constprop.0.isra.0                      10,207,381    0.70%
+lifting8                                             10,032,306    0.68%
+invFixp                                               9,063,840    0.62%
+BASOP_Util_InvLog2_pos                                8,662,328    0.59%
+calculate_active_bits                                 8,518,582    0.58%
 FIRLattice                                            7,840,000    0.53%
-write_bit_backward                                    7,595,386    0.51%
-pvq_enc_search_fx                                     7,461,505    0.50%
-compute_resbits_priority                              7,454,033    0.50%
-<span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                       7,283,542    0.49%</span>Norm32Norm                                            7,253,899    0.49%
-IIRLattice                                            7,168,306    0.48%
-check_pc_bytes                                        6,735,756    0.45%
-processPLCupdateSpec_fx                               6,128,139    0.41%
-<span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                      5,482,370    0.37%</span>processProperRounding_fx                              5,281,260    0.35%
-process_lsb_remove                                    5,280,002    0.35%
-_lc3_scratch_pop                                      5,064,044    0.34%
-getScaleFactor16_0                                    4,994,172    0.33%
-round_w32tow16_arr                                    4,372,290    0.29%
-_IO_sgetn                                             4,357,836    0.29%
-_lc3_scratch_push                                     4,357,230    0.29%
+write_bit_backward                                    7,595,386    0.52%
+pvq_enc_search_fx                                     7,461,505    0.51%
+compute_resbits_priority                              7,454,033    0.51%
+<span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                       7,283,542    0.50%</span>Norm32Norm                                            7,253,899    0.49%
+IIRLattice                                            7,168,306    0.49%
+check_pc_bytes                                        6,735,756    0.46%
+processPLCupdateSpec_fx                               6,128,139    0.42%
+<span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                      5,482,370    0.37%</span>processProperRounding_fx                              5,281,260    0.36%
+process_lsb_remove                                    5,280,002    0.36%
+_lc3_scratch_pop                                      5,064,044    0.35%
+getScaleFactor16_0                                    4,994,172    0.34%
+round_w32tow16_arr                                    4,372,290    0.30%
+_IO_sgetn                                             4,357,836    0.30%
+_lc3_scratch_push                                     4,357,230    0.30%
 processNearNyquistdetector_fx                         4,109,848    0.28%
 process_lsb_add                                       3,883,450    0.26%
 processLevinson_fx                                    3,818,027    0.26%
-processSnsInterpolateScf_fx                           3,343,100    0.22%
-downshift_w32_arr                                     3,023,940    0.20%
+processSnsInterpolateScf_fx                           3,343,100    0.23%
+downshift_w32_arr                                     3,023,940    0.21%
 .plt                                                  2,966,922    0.20%
-_wordcopy_fwd_dest_aligned                            2,723,581    0.18%
+_wordcopy_fwd_dest_aligned                            2,723,581    0.19%
 shl_pos.constprop.0                                   2,617,769    0.18%
 Scale_sig                                             2,554,178    0.17%
 __memset_vector                                       2,487,577    0.17%
 process_ltpf_decoder_fx                               2,223,330    0.15%
 pvq_dec_en1_normQ14_fx                                2,208,243    0.15%
-memmove                                               2,038,130    0.14%
+<span class="hs-hl-row" style="background:hsla(145,70%,50%,0.15);border-left:3px solid hsl(145,70%,35%)">estimate_gain_energy_hr_riscv                         2,068,480    0.14%</span>memmove                                               2,038,130    0.14%
 processSnsComputeScf_fx                               1,638,769    0.11%
 <span class="hs-hl-row" style="background:hsla(138,70%,50%,0.15);border-left:3px solid hsl(138,70%,35%)">mdct_shaping_func1                                    1,522,070    0.10%</span>idct32_32_fx                                          1,344,502    0.09%
 processDecoderEntropy_fx                              1,183,160    0.08%
@@ -2766,7 +2768,7 @@ getLastNzBits_fx                                        154,581    0.01%
 BASOP_getTables                                         139,380    0.01%
 get_size_mpvq_calc_offset_fx                            129,598    0.01%
 processPLCmain_fx                                       123,220    0.01%
-read_encoded_value_with_base                            111,768    0.01%
+read_encoded_value_with_base                            111,914    0.01%
 __strchrnul                                             107,083    0.01%
 Dec_LC3                                                 105,470    0.01%
 lc3_dec_process_frame                                    93,930    0.01%
@@ -2776,10 +2778,10 @@ Enc_LC3                                                  81,810    0.01%
 lc3_enc_process_frame                                    79,103    0.01%
 pvq_dec_deidx_fx                                         78,798    0.01%
 attack_detector_fx                                       72,720    0.00%
-processPLCclassify_fx                                    71,710    0.00%
 lossless_bit_estimation                                  71,710    0.00%
+processPLCclassify_fx                                    71,710    0.00%
 lc3_scratch_init                                         70,700    0.00%
-classify_object_over_fdes                                66,896    0.00%
+classify_object_over_fdes                                66,984    0.00%
 new_do_write                                             63,530    0.00%
 getLiftingCoeffs2_fx                                     54,540    0.00%
 _itoa_word                                               52,572    0.00%
@@ -2813,8 +2815,8 @@ type_2_fadeout_fx                                         1,872    0.00%
 __strlen                                                  1,561    0.00%
 powWord16rest                                             1,404    0.00%
 get_cie_encoding                                          1,220    0.00%
-__libc_read                                               1,195    0.00%
 _IO_file_read                                             1,195    0.00%
+__libc_read                                               1,195    0.00%
 fec_get_n_pc                                              1,142    0.00%
 fec_get_data_size                                         1,127    0.00%
 FillDecSetup                                                796    0.00%
@@ -2847,8 +2849,8 @@ _dl_non_dynamic_init                                        161    0.00%
 _IO_new_fclose                                              158    0.00%
 _int_free_chunk                                             147    0.00%
 _IO_un_link.part.0                                          146    0.00%
-_IO_file_doallocate                                         143    0.00%
 _IO_new_file_fopen                                          143    0.00%
+_IO_file_doallocate                                         143    0.00%
 lc3_dec_init                                                139    0.00%
 update_enc_bitrate                                          139    0.00%
 _IO_new_file_close_it                                       138    0.00%
@@ -2911,9 +2913,9 @@ munmap_chunk                                                 35    0.00%
 lc3_dec_supported_plc_method                                 35    0.00%
 __pthread_mutex_unlock_usercnt                               31    0.00%
 _IO_default_finish                                           30    0.00%
+__popcountdi2                                                29    0.00%
 call_fini                                                    29    0.00%
 _dl_debug_initialize                                         29    0.00%
-__popcountdi2                                                29    0.00%
 lc3_enc_supported_frame_dms                                  29    0.00%
 fec_get_n_pccw                                               28    0.00%
 __sigsetjmp                                                  27    0.00%
@@ -2922,71 +2924,71 @@ _IO_new_file_finish                                          26    0.00%
 _dl_get_origin                                               25    0.00%
 btree_remove                                                 24    0.00%
 register_pc_range_for_object.constprop.0                     24    0.00%
-__libc_memset_ifunc                                          23    0.00%
 __is_decorate_maps_enabled                                   23    0.00%
-_int_free_maybe_trim                                         22    0.00%
+__libc_memset_ifunc                                          23    0.00%
 __init_misc                                                  22    0.00%
+_int_free_maybe_trim                                         22    0.00%
 strchr                                                       22    0.00%
 __libc_start_call_main                                       21    0.00%
-__pthread_tunables_init                                      20    0.00%
 __libc_memcpy_ifunc                                          20    0.00%
+__pthread_tunables_init                                      20    0.00%
 __libc_lseek                                                 20    0.00%
 __libc_init_first                                            19    0.00%
-__do_global_dtors_aux                                        18    0.00%
 _IO_putc                                                     18    0.00%
 _IO_stdfiles_init                                            18    0.00%
+__do_global_dtors_aux                                        18    0.00%
 _IO_new_file_setbuf                                          18    0.00%
-__deregister_frame_info_bases.part.0                         17    0.00%
 get_pc_range                                                 17    0.00%
+__deregister_frame_info_bases.part.0                         17    0.00%
 tcache_free_init                                             17    0.00%
-_dl_early_allocate                                           16    0.00%
 __set_vma_name                                               16    0.00%
+_dl_early_allocate                                           16    0.00%
 lc3_enc_set_ep_mode_request                                  16    0.00%
 _IO_un_link                                                  16    0.00%
 __GI___getrlimit                                             15    0.00%
 __fstat                                                      15    0.00%
 release_registered_frames                                    14    0.00%
 __brk                                                        14    0.00%
-__ctype_init                                                 13    0.00%
-__tls_pre_init_tp                                            13    0.00%
 _dl_handle_execstack_tunable                                 13    0.00%
 strrchr                                                      13    0.00%
+__tls_pre_init_tp                                            13    0.00%
+__ctype_init                                                 13    0.00%
 frame_dummy                                                  12    0.00%
 lc3_dec_supported_wavFormat                                  12    0.00%
-_start                                                       11    0.00%
 register_tm_clones                                           11    0.00%
 __register_frame_info                                        11    0.00%
+_start                                                       11    0.00%
 _dl_allocate_tls_init                                        10    0.00%
 _IO_unsave_markers                                           10    0.00%
 __close_nocancel                                             10    0.00%
 _IO_file_seek                                                10    0.00%
-lc3_dec_get_delay                                             8    0.00%
 lc3_enc_get_delay                                             8    0.00%
-lc3_enc_set_bitrate                                           7    0.00%
+lc3_dec_get_delay                                             8    0.00%
 exit                                                          7    0.00%
-__getrandom_early_init                                        6    0.00%
+lc3_enc_set_bitrate                                           7    0.00%
 __mmap                                                        6    0.00%
+__getrandom_early_init                                        6    0.00%
 deregister_tm_clones                                          6    0.00%
 load_gp                                                       6    0.00%
 __cxa_atexit                                                  6    0.00%
 lc3_enc_supported_hrmode                                      6    0.00%
 _IO_file_stat                                                 6    0.00%
-lc3_dec_get_output_samples                                    5    0.00%
 lc3_enc_get_input_samples                                     5    0.00%
+lc3_dec_get_output_samples                                    5    0.00%
 __mprotect                                                    4    0.00%
-__deregister_frame_info                                       4    0.00%
 lc3_enc_version                                               4    0.00%
 lc3_dec_version                                               4    0.00%
 __sigjmp_save                                                 4    0.00%
 __munmap                                                      4    0.00%
+__deregister_frame_info                                       4    0.00%
 _IO_file_close                                                4    0.00%
 _IO_new_fopen                                                 4    0.00%
-lc3_enc_set_bandwidth                                         3    0.00%
 atexit                                                        3    0.00%
+lc3_enc_set_bandwidth                                         3    0.00%
 ___pthread_mutex_unlock                                       2    0.00%
-lc3_dec_exit                                                  2    0.00%
 _setjmp                                                       2    0.00%
 lc3_enc_exit                                                  2    0.00%
+lc3_dec_exit                                                  2    0.00%
 __wrap_main                                                   1    0.00%
 _dl_relocate_static_pie                                       1    0.00%
 _exit                                                         1    0.00%
@@ -3004,8 +3006,7 @@ TOTAL                                              3,039,401,762  100.00%
 
 __clzdi2                                            199,482,815    6.56%
 <span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                               173,608,900    5.71%</span><span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                    171,896,453    5.66%</span>processAriDecoder_fx                                164,393,502    5.41%
-<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               149,816,442    4.93%</span><span class="hs-hl-row" style="background:hsla(92,70%,50%,0.15);border-left:3px solid hsl(92,70%,35%)">fft30                                               132,883,680    4.37%</span><span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                              118,818,420    3.91%</span>processEstimateGlobalGain_fx                        107,460,437    3.54%
-main                                                104,902,226    3.45%
+<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               149,816,442    4.93%</span><span class="hs-hl-row" style="background:hsla(92,70%,50%,0.15);border-left:3px solid hsl(92,70%,35%)">fft30                                               132,883,680    4.37%</span><span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                              118,818,420    3.91%</span><span class="hs-hl-row" style="background:hsla(8,70%,50%,0.15);border-left:3px solid hsl(8,70%,35%)">processEstimateGlobalGain_fx                        107,460,437    3.54%</span>main                                                104,902,226    3.45%
 processAriEncoder_fx                                 78,117,018    2.57%
 _IO_fwrite                                           75,534,186    2.49%
 <span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                      68,880,273    2.27%</span>intMdct2_fx                                          58,518,390    1.93%
@@ -3350,80 +3351,79 @@ _exit                                                         1    0.00%
 </pre></div><div class="hs-col"><div class="hs-label">Auto-vectorization</div><pre class="hs-pre hs-pre--missing"><span>No data for this configuration</span></pre></div><div class="hs-col"><div class="hs-label">Only RVV</div><pre class="hs-pre">
 Function                                                  Count        %
 -------------------------------------------------------------------------
-TOTAL                                              2,376,820,038  100.00%
+TOTAL                                              2,324,510,881  100.00%
 -------------------------------------------------------------------------
 
-__clzdi2                                            199,054,139    8.37%
-processAriDecoder_fx                                164,366,260    6.92%
-<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               137,133,598    5.77%</span>processEstimateGlobalGain_fx                        107,427,281    4.52%
-main                                                104,902,489    4.41%
-processAriEncoder_fx                                 78,540,974    3.30%
-_IO_fwrite                                           75,534,186    3.18%
-intMdct2_fx                                          60,213,170    2.53%
-processPerBandEnergy_fx                              58,173,173    2.45%
-process_deterministic_curve                          57,225,684    2.41%
-processQuantizeSpec_fx                               53,933,461    2.27%
-invIntMdct2_fx                                       51,016,110    2.15%
-_IO_fread                                            49,391,052    2.08%
-_IO_file_xsgetn                                      47,461,721    2.00%
-lifting65                                            46,390,260    1.95%
-&lt;unknown&gt;                                            45,118,793    1.90%
-__memcpy_generic                                     42,743,249    1.80%
-invIntDCT4_fx.constprop.0                            41,124,170    1.73%
-processTnsCoder_fx                                   40,814,266    1.72%
-_IO_new_file_xsputn                                  39,845,128    1.68%
-intDCT4_fx.isra.0                                    38,444,640    1.62%
-process_ltpf_coder_fx                                37,669,248    1.58%
-BASOP_Util_Log2                                      37,502,504    1.58%
-lifting32                                            35,113,660    1.48%
-residual_decoder_lossless                            33,442,878    1.41%
-<span class="hs-hl-row" style="background:hsla(0,70%,50%,0.15);border-left:3px solid hsl(0,70%,35%)">processMdctShaping_fx                                33,432,380    1.41%</span>ac_decode_fx.constprop.0                             32,582,544    1.37%
-residual_encoder_lossless                            30,740,956    1.29%
-<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               27,154,860    1.14%</span>ac_dec_update_fx                                     26,049,411    1.10%
-lifting4                                             25,902,750    1.09%
-Dec_LC3_Channel                                      24,363,846    1.03%
-lifting7                                             20,939,848    0.88%
-ac_encode_fx                                         20,927,926    0.88%
-Enc_LC3_Channel                                      20,783,970    0.87%
-ReadWavShort.constprop.0.isra.0                      20,375,371    0.86%
-lifting8                                             20,240,810    0.85%
-read_bit                                             19,898,521    0.84%
-BASOP_Util_Add_Mant32Exp                             18,918,533    0.80%
-BASOP_Util_Log2_LC                                   18,742,360    0.79%
-MPVQ_HPVC_BitEstMulti.part.0                         16,098,036    0.68%
-<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                15,105,560    0.64%</span>calculate_active_bits                                14,574,168    0.61%
-processSnsQuantizeScfEncoder_fx                      13,790,322    0.58%
-write_bit_backward                                   13,417,950    0.56%
-<span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     12,345,092    0.52%</span>processPLCupdateSpec_fx                              12,327,172    0.52%
-processProperRounding_fx                             10,507,677    0.44%
-<span class="hs-hl-row" style="background:hsla(230,70%,50%,0.15);border-left:3px solid hsl(230,70%,35%)">fft30_riscv.constprop.0                              10,326,240    0.43%</span>process_lsb_remove                                   10,303,744    0.43%
-BASOP_Util_Log2_16                                   10,240,676    0.43%
-invFixp                                               9,095,680    0.38%
-round_w32tow16_arr                                    8,735,490    0.37%
+__clzdi2                                            190,466,830    8.19%
+processAriDecoder_fx                                164,366,260    7.07%
+<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               137,133,598    5.90%</span>main                                                104,902,489    4.51%
+processAriEncoder_fx                                 78,540,974    3.38%
+_IO_fwrite                                           75,534,186    3.25%
+<span class="hs-hl-row" style="background:hsla(8,70%,50%,0.15);border-left:3px solid hsl(8,70%,35%)">processEstimateGlobalGain_fx                         60,220,690    2.59%</span>intMdct2_fx                                          60,213,170    2.59%
+processPerBandEnergy_fx                              58,173,173    2.50%
+process_deterministic_curve                          57,225,684    2.46%
+processQuantizeSpec_fx                               53,933,461    2.32%
+invIntMdct2_fx                                       51,016,110    2.19%
+_IO_fread                                            49,391,052    2.12%
+_IO_file_xsgetn                                      47,461,721    2.04%
+lifting65                                            46,390,260    2.00%
+&lt;unknown&gt;                                            45,133,059    1.94%
+__memcpy_generic                                     42,743,249    1.84%
+invIntDCT4_fx.constprop.0                            41,124,170    1.77%
+processTnsCoder_fx                                   40,814,266    1.76%
+_IO_new_file_xsputn                                  39,845,128    1.71%
+intDCT4_fx.isra.0                                    38,444,640    1.65%
+process_ltpf_coder_fx                                37,669,248    1.62%
+BASOP_Util_Log2                                      37,502,504    1.61%
+lifting32                                            35,113,660    1.51%
+residual_decoder_lossless                            33,442,878    1.44%
+<span class="hs-hl-row" style="background:hsla(0,70%,50%,0.15);border-left:3px solid hsl(0,70%,35%)">processMdctShaping_fx                                33,432,380    1.44%</span>ac_decode_fx.constprop.0                             32,582,544    1.40%
+residual_encoder_lossless                            30,740,956    1.32%
+<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               27,154,860    1.17%</span>ac_dec_update_fx                                     26,049,411    1.12%
+lifting4                                             25,902,750    1.11%
+Dec_LC3_Channel                                      24,363,846    1.05%
+lifting7                                             20,939,848    0.90%
+ac_encode_fx                                         20,927,926    0.90%
+Enc_LC3_Channel                                      20,783,970    0.89%
+ReadWavShort.constprop.0.isra.0                      20,375,371    0.88%
+lifting8                                             20,240,810    0.87%
+read_bit                                             19,898,521    0.86%
+BASOP_Util_Add_Mant32Exp                             18,918,533    0.81%
+BASOP_Util_Log2_LC                                   18,742,360    0.81%
+MPVQ_HPVC_BitEstMulti.part.0                         16,098,036    0.69%
+<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                15,105,560    0.65%</span>calculate_active_bits                                14,574,168    0.63%
+processSnsQuantizeScfEncoder_fx                      13,790,322    0.59%
+write_bit_backward                                   13,417,950    0.58%
+<span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     12,345,092    0.53%</span>processPLCupdateSpec_fx                              12,327,172    0.53%
+processProperRounding_fx                             10,507,677    0.45%
+process_lsb_remove                                   10,303,744    0.44%
+BASOP_Util_Log2_16                                   10,240,676    0.44%
+<span class="hs-hl-row" style="background:hsla(230,70%,50%,0.15);border-left:3px solid hsl(230,70%,35%)">fft30_riscv.constprop.0                              10,229,280    0.44%</span>invFixp                                               9,095,680    0.39%
+round_w32tow16_arr                                    8,735,490    0.38%
 _IO_sgetn                                             8,716,068    0.37%
 BASOP_Util_InvLog2_pos                                8,682,510    0.37%
-FIRLattice                                            7,933,728    0.33%
+FIRLattice                                            7,933,728    0.34%
 process_lsb_add                                       7,761,850    0.33%
 MPVQ_HPVC_BitEst.part.0                               7,752,495    0.33%
 <span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                       7,277,783    0.31%</span>IIRLattice                                            7,254,228    0.31%
 Norm32Norm                                            7,253,944    0.31%
-compute_resbits_priority                              6,931,507    0.29%
+compute_resbits_priority                              6,931,507    0.30%
 pvq_enc_search_fx                                     6,832,728    0.29%
-check_pc_bytes                                        6,494,636    0.27%
-downshift_w32_arr                                     5,932,740    0.25%
+check_pc_bytes                                        6,494,636    0.28%
+downshift_w32_arr                                     5,932,740    0.26%
 .plt                                                  5,871,510    0.25%
-shl_pos.constprop.0                                   5,252,731    0.22%
-hpvc_analyze_start_fx                                 5,090,492    0.21%
-_lc3_scratch_pop                                      5,064,044    0.21%
+shl_pos.constprop.0                                   5,252,731    0.23%
+hpvc_analyze_start_fx                                 5,090,492    0.22%
+_lc3_scratch_pop                                      5,064,044    0.22%
 getScaleFactor16_0                                    4,994,235    0.21%
-_lc3_scratch_push                                     4,357,230    0.18%
+_lc3_scratch_push                                     4,357,230    0.19%
 processNearNyquistdetector_fx                         4,065,578    0.17%
 processLevinson_fx                                    3,818,047    0.16%
 hpvc_leaf_sz_Nmpvq                                    3,756,923    0.16%
 hpvc_leaf_rate_Smpvq                                  3,720,186    0.16%
-processSnsInterpolateScf_fx                           3,343,100    0.14%
-__memset_vector                                       2,958,478    0.12%
-_wordcopy_fwd_dest_aligned                            2,717,521    0.11%
+<span class="hs-hl-row" style="background:hsla(145,70%,50%,0.15);border-left:3px solid hsl(145,70%,35%)">estimate_gain_energy_hr_riscv                         3,567,320    0.15%</span>processSnsInterpolateScf_fx                           3,343,100    0.14%
+__memset_vector                                       2,958,478    0.13%
+_wordcopy_fwd_dest_aligned                            2,717,521    0.12%
 Scale_sig                                             2,554,178    0.11%
 pvq_dec_en1_normQ14_fx                                2,198,445    0.09%
 memmove                                               1,812,900    0.08%
@@ -3432,11 +3432,11 @@ idct32_32_fx                                          1,338,292    0.06%
 processDecoderEntropy_fx                              1,211,500    0.05%
 processTnsDecoder_fx                                  1,119,615    0.05%
 hpvc_collect_hpvc_bitrates                            1,113,381    0.05%
-readSNSData_fx                                        1,062,008    0.04%
+readSNSData_fx                                        1,062,008    0.05%
 Isqrt                                                   904,215    0.04%
 processEncoderEntropy                                   885,109    0.04%
 mpvq_index_fx                                           847,210    0.04%
-hpvc_segment_accept_reject                              828,726    0.03%
+hpvc_segment_accept_reject                              828,726    0.04%
 mpvq_deindex_fx                                         808,907    0.03%
 writeSNSData_fx                                         775,297    0.03%
 find_last_nz_pair                                       758,337    0.03%
@@ -3462,7 +3462,7 @@ __printf_buffer                                         195,039    0.01%
 getLastNzBits_fx                                        154,581    0.01%
 get_size_mpvq_calc_offset_fx                            125,750    0.01%
 processPLCmain_fx                                       123,220    0.01%
-read_encoded_value_with_base                            111,841    0.00%
+read_encoded_value_with_base                            111,914    0.00%
 __strchrnul                                             107,083    0.00%
 Dec_LC3                                                 105,730    0.00%
 lc3_dec_process_frame                                    92,920    0.00%
@@ -3476,7 +3476,7 @@ new_do_write                                             75,566    0.00%
 attack_detector_fx                                       72,720    0.00%
 pvq_dec_deidx_fx                                         71,070    0.00%
 lc3_scratch_init                                         70,700    0.00%
-classify_object_over_fdes                                66,940    0.00%
+classify_object_over_fdes                                66,984    0.00%
 getLiftingCoeffs2_fx                                     60,600    0.00%
 lossless_bit_estimation                                  56,560    0.00%
 _IO_new_file_write                                       53,274    0.00%
@@ -3508,8 +3508,8 @@ ac_decode_W32N_uni_fx                                     9,139    0.00%
 get_decoder_min_max_bytes                                 9,090    0.00%
 ac_encode_uni_fx.constprop.0                              8,058    0.00%
 __libc_write                                              7,610    0.00%
-lc3_enc_get_lossless_status                               7,070    0.00%
 lc3_dec_get_lossless_status                               7,070    0.00%
+lc3_enc_get_lossless_status                               7,070    0.00%
 ac_encode_W32N_uni_fx                                     6,278    0.00%
 hpvc_leaf_dec_deidx_fx                                    4,547    0.00%
 hpvc_get_quasi_uniform_sizes.constprop.0                  4,338    0.00%
@@ -3594,8 +3594,8 @@ version_lock_unlock_exclusive                                63    0.00%
 sysmalloc_mmap                                               56    0.00%
 _IO_seekoff_unlocked                                         56    0.00%
 __calloc                                                     54    0.00%
-__libc_open                                                  50    0.00%
 _dl_find_object_init                                         50    0.00%
+__libc_open                                                  50    0.00%
 __libc_early_init                                            49    0.00%
 _IO_default_setbuf                                           49    0.00%
 _IO_new_fgetpos                                              48    0.00%
@@ -3611,16 +3611,16 @@ _dl_tls_static_surplus_init                                  38    0.00%
 __sbrk                                                       37    0.00%
 _IO_new_file_init_internal                                   36    0.00%
 _IO_free_backup_area                                         36    0.00%
-munmap_chunk                                                 35    0.00%
 ___pthread_mutex_lock                                        35    0.00%
+munmap_chunk                                                 35    0.00%
 lc3_dec_supported_plc_method                                 35    0.00%
 __pthread_mutex_unlock_usercnt                               31    0.00%
 lc3_enc_get_size                                             30    0.00%
 _IO_default_finish                                           30    0.00%
-__popcountdi2                                                29    0.00%
 _dl_debug_initialize                                         29    0.00%
-lc3_enc_supported_frame_dms                                  29    0.00%
 call_fini                                                    29    0.00%
+lc3_enc_supported_frame_dms                                  29    0.00%
+__popcountdi2                                                29    0.00%
 fec_get_n_pccw                                               28    0.00%
 __sigsetjmp                                                  27    0.00%
 _dl_protect_relro                                            26    0.00%
@@ -3630,23 +3630,23 @@ btree_remove                                                 24    0.00%
 register_pc_range_for_object.constprop.0                     24    0.00%
 __libc_memset_ifunc                                          23    0.00%
 __is_decorate_maps_enabled                                   23    0.00%
-_int_free_maybe_trim                                         22    0.00%
 __init_misc                                                  22    0.00%
+_int_free_maybe_trim                                         22    0.00%
 strchr                                                       22    0.00%
 __libc_start_call_main                                       21    0.00%
-__libc_memcpy_ifunc                                          20    0.00%
 __pthread_tunables_init                                      20    0.00%
+__libc_memcpy_ifunc                                          20    0.00%
 __libc_lseek                                                 20    0.00%
 __libc_init_first                                            19    0.00%
 _IO_putc                                                     18    0.00%
 _IO_stdfiles_init                                            18    0.00%
-_IO_new_file_setbuf                                          18    0.00%
 __do_global_dtors_aux                                        18    0.00%
-tcache_free_init                                             17    0.00%
+_IO_new_file_setbuf                                          18    0.00%
 __deregister_frame_info_bases.part.0                         17    0.00%
 get_pc_range                                                 17    0.00%
-__set_vma_name                                               16    0.00%
+tcache_free_init                                             17    0.00%
 _dl_early_allocate                                           16    0.00%
+__set_vma_name                                               16    0.00%
 lc3_enc_set_ep_mode_request                                  16    0.00%
 _IO_un_link                                                  16    0.00%
 __GI___getrlimit                                             15    0.00%
@@ -3655,8 +3655,8 @@ release_registered_frames                                    14    0.00%
 __brk                                                        14    0.00%
 __ctype_init                                                 13    0.00%
 __tls_pre_init_tp                                            13    0.00%
-strrchr                                                      13    0.00%
 _dl_handle_execstack_tunable                                 13    0.00%
+strrchr                                                      13    0.00%
 frame_dummy                                                  12    0.00%
 lc3_dec_supported_wavFormat                                  12    0.00%
 _start                                                       11    0.00%
@@ -3666,28 +3666,28 @@ _dl_allocate_tls_init                                        10    0.00%
 _IO_unsave_markers                                           10    0.00%
 __close_nocancel                                             10    0.00%
 _IO_file_seek                                                10    0.00%
-lc3_dec_get_delay                                             8    0.00%
 lc3_enc_get_delay                                             8    0.00%
+lc3_dec_get_delay                                             8    0.00%
 _IO_feof                                                      8    0.00%
 exit                                                          7    0.00%
 lc3_enc_set_bitrate                                           7    0.00%
-__mmap                                                        6    0.00%
 __getrandom_early_init                                        6    0.00%
+__mmap                                                        6    0.00%
 deregister_tm_clones                                          6    0.00%
-__cxa_atexit                                                  6    0.00%
 load_gp                                                       6    0.00%
-lc3_enc_supported_hrmode                                      6    0.00%
+__cxa_atexit                                                  6    0.00%
 _IO_file_stat                                                 6    0.00%
-lc3_dec_get_output_samples                                    5    0.00%
+lc3_enc_supported_hrmode                                      6    0.00%
 lc3_enc_get_input_samples                                     5    0.00%
-lc3_dec_version                                               4    0.00%
-__sigjmp_save                                                 4    0.00%
-lc3_enc_version                                               4    0.00%
+lc3_dec_get_output_samples                                    5    0.00%
 __mprotect                                                    4    0.00%
+__sigjmp_save                                                 4    0.00%
 __munmap                                                      4    0.00%
+lc3_dec_version                                               4    0.00%
+lc3_enc_version                                               4    0.00%
 __deregister_frame_info                                       4    0.00%
-_IO_new_fopen                                                 4    0.00%
 _IO_file_close                                                4    0.00%
+_IO_new_fopen                                                 4    0.00%
 atexit                                                        3    0.00%
 lc3_enc_set_bandwidth                                         3    0.00%
 ___pthread_mutex_unlock                                       2    0.00%
@@ -3711,8 +3711,7 @@ TOTAL                                              5,541,762,314  100.00%
 
 __clzdi2                                            355,860,059    6.42%
 <span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                    338,135,133    6.10%</span><span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                               337,729,860    6.09%</span><span class="hs-hl-row" style="background:hsla(92,70%,50%,0.15);border-left:3px solid hsl(92,70%,35%)">fft30                                               265,767,360    4.80%</span>processAriDecoder_fx                                244,707,209    4.42%
-<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                              237,352,020    4.28%</span><span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               219,278,490    3.96%</span>processEstimateGlobalGain_fx                        212,156,125    3.83%
-main                                                209,504,346    3.78%
+<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                              237,352,020    4.28%</span><span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               219,278,490    3.96%</span><span class="hs-hl-row" style="background:hsla(8,70%,50%,0.15);border-left:3px solid hsl(8,70%,35%)">processEstimateGlobalGain_fx                        212,156,125    3.83%</span>main                                                209,504,346    3.78%
 _IO_fwrite                                          151,067,826    2.73%
 processAriEncoder_fx                                132,867,700    2.40%
 intMdct2_fx                                         116,815,590    2.11%
@@ -4058,79 +4057,78 @@ _exit                                                         1    0.00%
 </pre></div><div class="hs-col"><div class="hs-label">Auto-vectorization</div><pre class="hs-pre hs-pre--missing"><span>No data for this configuration</span></pre></div><div class="hs-col"><div class="hs-label">Only RVV</div><pre class="hs-pre">
 Function                                                  Count        %
 -------------------------------------------------------------------------
-TOTAL                                              4,301,300,290  100.00%
+TOTAL                                              4,198,080,117  100.00%
 -------------------------------------------------------------------------
 
-__clzdi2                                            354,873,821    8.25%
-processAriDecoder_fx                                244,426,548    5.68%
-processEstimateGlobalGain_fx                        212,072,255    4.93%
-main                                                209,504,609    4.87%
-<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               198,638,130    4.62%</span>_IO_fwrite                                          151,067,826    3.51%
-processAriEncoder_fx                                133,726,112    3.11%
-intMdct2_fx                                         120,207,170    2.79%
-fft16                                               110,704,574    2.57%
-process_deterministic_curve                         110,366,422    2.57%
-invIntMdct2_fx                                      101,859,510    2.37%
-_IO_fread                                            98,778,432    2.30%
-processPerBandEnergy_fx                              95,628,365    2.22%
-_IO_file_xsgetn                                      94,919,909    2.21%
-processQuantizeSpec_fx                               94,769,065    2.20%
-lifting65                                            92,770,414    2.16%
-__memcpy_generic                                     85,341,578    1.98%
-&lt;unknown&gt;                                            83,293,023    1.94%
-invIntDCT4_fx.constprop.0                            82,087,750    1.91%
-_IO_new_file_xsputn                                  79,557,222    1.85%
-intDCT4_fx.isra.0                                    76,741,820    1.78%
-lifting32                                            70,019,260    1.63%
-<span class="hs-hl-row" style="background:hsla(0,70%,50%,0.15);border-left:3px solid hsl(0,70%,35%)">processMdctShaping_fx                                64,473,076    1.50%</span>BASOP_Util_Log2                                      61,903,608    1.44%
-residual_decoder_lossless                            55,063,908    1.28%
-<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               53,152,260    1.24%</span>calculate_active_bits                                52,212,322    1.21%
-ac_decode_fx.constprop.0                             51,746,181    1.20%
-BASOP_Util_Log2_LC                                   51,635,730    1.20%
-lifting4                                             51,595,748    1.20%
-residual_encoder_lossless                            46,932,045    1.09%
-MPVQ_HPVC_BitEstMulti.part.0                         45,320,738    1.05%
-Dec_LC3_Channel                                      44,985,440    1.05%
-ac_dec_update_fx                                     42,331,165    0.98%
-lifting7                                             42,060,952    0.98%
-ReadWavShort.constprop.0.isra.0                      40,711,351    0.95%
-processTnsCoder_fx                                   40,686,498    0.95%
-lifting8                                             40,440,734    0.94%
-Enc_LC3_Channel                                      39,770,113    0.92%
-process_ltpf_coder_fx                                37,668,844    0.88%
-ac_encode_fx                                         37,268,625    0.87%
-processPLCupdateSpec_fx                              24,718,593    0.57%
-<span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     22,276,201    0.52%</span>MPVQ_HPVC_BitEst.part.0                              21,527,727    0.50%
-read_bit                                             21,366,860    0.50%
-processProperRounding_fx                             20,972,856    0.49%
-<span class="hs-hl-row" style="background:hsla(230,70%,50%,0.15);border-left:3px solid hsl(230,70%,35%)">fft30_riscv.constprop.0                              20,652,480    0.48%</span>process_lsb_remove                                   20,364,238    0.47%
-<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                19,048,600    0.44%</span>write_bit_backward                                   18,976,368    0.44%
-BASOP_Util_Add_Mant32Exp                             18,510,479    0.43%
-round_w32tow16_arr                                   17,461,890    0.41%
-_IO_sgetn                                            17,431,488    0.41%
-process_lsb_add                                      15,518,650    0.36%
-processSnsQuantizeScfEncoder_fx                      13,795,984    0.32%
-downshift_w32_arr                                    11,750,340    0.27%
-.plt                                                 11,681,013    0.27%
-hpvc_leaf_sz_Nmpvq                                   10,352,172    0.24%
+__clzdi2                                            338,727,562    8.07%
+processAriDecoder_fx                                244,426,548    5.82%
+main                                                209,504,609    4.99%
+<span class="hs-hl-row" style="background:hsla(105,70%,50%,0.15);border-left:3px solid hsl(105,70%,35%)">fftN2                                               198,638,130    4.73%</span>_IO_fwrite                                          151,067,826    3.60%
+processAriEncoder_fx                                133,726,112    3.19%
+intMdct2_fx                                         120,207,170    2.86%
+<span class="hs-hl-row" style="background:hsla(8,70%,50%,0.15);border-left:3px solid hsl(8,70%,35%)">processEstimateGlobalGain_fx                        118,409,036    2.82%</span>fft16                                               110,704,574    2.64%
+process_deterministic_curve                         110,366,422    2.63%
+invIntMdct2_fx                                      101,859,510    2.43%
+_IO_fread                                            98,778,432    2.35%
+processPerBandEnergy_fx                              95,628,365    2.28%
+_IO_file_xsgetn                                      94,919,909    2.26%
+processQuantizeSpec_fx                               94,769,065    2.26%
+lifting65                                            92,770,414    2.21%
+__memcpy_generic                                     85,341,578    2.03%
+&lt;unknown&gt;                                            83,297,011    1.98%
+invIntDCT4_fx.constprop.0                            82,087,750    1.96%
+_IO_new_file_xsputn                                  79,557,222    1.90%
+intDCT4_fx.isra.0                                    76,741,820    1.83%
+lifting32                                            70,019,260    1.67%
+<span class="hs-hl-row" style="background:hsla(0,70%,50%,0.15);border-left:3px solid hsl(0,70%,35%)">processMdctShaping_fx                                64,473,076    1.54%</span>BASOP_Util_Log2                                      61,903,608    1.47%
+residual_decoder_lossless                            55,063,908    1.31%
+<span class="hs-hl-row" style="background:hsla(348,70%,50%,0.15);border-left:3px solid hsl(348,70%,35%)">dct_IV                                               53,152,260    1.27%</span>calculate_active_bits                                52,212,322    1.24%
+ac_decode_fx.constprop.0                             51,746,181    1.23%
+BASOP_Util_Log2_LC                                   51,635,730    1.23%
+lifting4                                             51,595,748    1.23%
+residual_encoder_lossless                            46,932,045    1.12%
+MPVQ_HPVC_BitEstMulti.part.0                         45,320,738    1.08%
+Dec_LC3_Channel                                      44,985,440    1.07%
+ac_dec_update_fx                                     42,331,165    1.01%
+lifting7                                             42,060,952    1.00%
+ReadWavShort.constprop.0.isra.0                      40,711,351    0.97%
+processTnsCoder_fx                                   40,686,498    0.97%
+lifting8                                             40,440,734    0.96%
+Enc_LC3_Channel                                      39,770,113    0.95%
+process_ltpf_coder_fx                                37,668,844    0.90%
+ac_encode_fx                                         37,268,625    0.89%
+processPLCupdateSpec_fx                              24,718,593    0.59%
+<span class="hs-hl-row" style="background:hsla(72,70%,50%,0.15);border-left:3px solid hsl(72,70%,35%)">getScaleFactor32                                     22,276,201    0.53%</span>MPVQ_HPVC_BitEst.part.0                              21,527,727    0.51%
+read_bit                                             21,366,860    0.51%
+processProperRounding_fx                             20,972,856    0.50%
+<span class="hs-hl-row" style="background:hsla(230,70%,50%,0.15);border-left:3px solid hsl(230,70%,35%)">fft30_riscv.constprop.0                              20,458,560    0.49%</span>process_lsb_remove                                   20,364,238    0.49%
+<span class="hs-hl-row" style="background:hsla(275,70%,50%,0.15);border-left:3px solid hsl(275,70%,35%)">process_resamp12k8_fx                                19,048,600    0.45%</span>write_bit_backward                                   18,976,368    0.45%
+BASOP_Util_Add_Mant32Exp                             18,510,479    0.44%
+round_w32tow16_arr                                   17,461,890    0.42%
+_IO_sgetn                                            17,431,488    0.42%
+process_lsb_add                                      15,518,650    0.37%
+processSnsQuantizeScfEncoder_fx                      13,795,984    0.33%
+downshift_w32_arr                                    11,750,340    0.28%
+.plt                                                 11,681,013    0.28%
+hpvc_leaf_sz_Nmpvq                                   10,352,172    0.25%
 hpvc_leaf_rate_Smpvq                                 10,278,635    0.24%
 shl_pos.constprop.0                                  10,227,129    0.24%
-hpvc_analyze_start_fx                                 9,987,933    0.23%
-BASOP_Util_Log2_16                                    9,519,910    0.22%
-invFixp                                               9,096,950    0.21%
-compute_resbits_priority                              8,720,945    0.20%
-BASOP_Util_InvLog2_pos                                8,670,308    0.20%
+hpvc_analyze_start_fx                                 9,987,933    0.24%
+BASOP_Util_Log2_16                                    9,519,910    0.23%
+invFixp                                               9,096,950    0.22%
+compute_resbits_priority                              8,720,945    0.21%
+BASOP_Util_InvLog2_pos                                8,670,308    0.21%
 FIRLattice                                            8,008,928    0.19%
 check_pc_bytes                                        7,697,720    0.18%
 IIRLattice                                            7,321,634    0.17%
 <span class="hs-hl-row" style="background:hsla(20,70%,50%,0.15);border-left:3px solid hsl(20,70%,35%)">process_olpa_fx                                       7,283,596    0.17%</span>Norm32Norm                                            7,230,639    0.17%
-pvq_enc_search_fx                                     6,513,635    0.15%
+<span class="hs-hl-row" style="background:hsla(145,70%,50%,0.15);border-left:3px solid hsl(145,70%,35%)">estimate_gain_energy_hr_riscv                         6,779,120    0.16%</span>pvq_enc_search_fx                                     6,513,635    0.16%
 _lc3_scratch_pop                                      5,063,726    0.12%
 getScaleFactor16_0                                    4,994,134    0.12%
-process_dec_tcx_tuple_ep                              4,871,123    0.11%
-_wordcopy_fwd_dest_aligned                            4,474,243    0.10%
+process_dec_tcx_tuple_ep                              4,871,123    0.12%
+_wordcopy_fwd_dest_aligned                            4,474,243    0.11%
 _lc3_scratch_push                                     4,356,960    0.10%
-processNearNyquistdetector_fx                         3,995,346    0.09%
+processNearNyquistdetector_fx                         3,995,346    0.10%
 __memset_vector                                       3,899,999    0.09%
 processLevinson_fx                                    3,805,733    0.09%
 processSnsInterpolateScf_fx                           3,343,100    0.08%
@@ -4148,7 +4146,7 @@ hpvc_get_log_sizes                                    1,527,336    0.04%
 find_last_nz_pair                                     1,464,114    0.03%
 idct32_32_fx                                          1,339,830    0.03%
 processDecoderEntropy_fx                              1,242,830    0.03%
-readSNSData_fx                                        1,069,969    0.02%
+readSNSData_fx                                        1,069,969    0.03%
 mpvq_deindex_fx                                       1,031,568    0.02%
 getScaleFactor32_0                                    1,022,945    0.02%
 hpvc_get_quasi_uniform_sizes                            935,343    0.02%
@@ -4174,7 +4172,7 @@ getLastNzBits_fx                                        154,581    0.00%
 BASOP_getTables                                         139,380    0.00%
 get_size_mpvq_calc_offset_fx                            126,996    0.00%
 processPLCmain_fx                                       123,220    0.00%
-read_encoded_value_with_base                            111,841    0.00%
+read_encoded_value_with_base                            111,914    0.00%
 __strchrnul                                             107,083    0.00%
 Dec_LC3                                                 105,720    0.00%
 lossless_bit_estimation                                  99,990    0.00%
@@ -4189,7 +4187,7 @@ attack_detector_fx                                       72,720    0.00%
 pvq_dec_deidx_fx                                         71,208    0.00%
 lc3_scratch_init                                         70,700    0.00%
 _IO_new_file_write                                       69,829    0.00%
-classify_object_over_fdes                                66,940    0.00%
+classify_object_over_fdes                                66,984    0.00%
 getLiftingCoeffs2_fx                                     66,660    0.00%
 _IO_default_xsputn                                       60,015    0.00%
 _itoa_word                                               52,650    0.00%
@@ -4263,8 +4261,8 @@ _IO_new_fclose                                              158    0.00%
 _int_free_chunk                                             147    0.00%
 _IO_un_link.part.0                                          146    0.00%
 update_enc_bitrate                                          143    0.00%
-_IO_file_doallocate                                         143    0.00%
 _IO_new_file_fopen                                          143    0.00%
+_IO_file_doallocate                                         143    0.00%
 _IO_new_file_close_it                                       138    0.00%
 lc3_dec_init                                                136    0.00%
 __printf_buffer_flush                                       135    0.00%
@@ -4280,8 +4278,8 @@ _dl_determine_tlsoffset                                     103    0.00%
 __libc_setup_tls                                             96    0.00%
 __fopen_internal                                             92    0.00%
 _IO_no_init                                                  90    0.00%
-__tls_init_tp                                                89    0.00%
 __memrchr                                                    89    0.00%
+__tls_init_tp                                                89    0.00%
 lc3_dec_get_size                                             88    0.00%
 _IO_setb                                                     85    0.00%
 tcache_init.part.0                                           83    0.00%
@@ -4307,12 +4305,12 @@ _dl_find_object_init                                         50    0.00%
 __libc_open                                                  50    0.00%
 __libc_early_init                                            49    0.00%
 _IO_default_setbuf                                           49    0.00%
-_IO_new_fgetpos                                              48    0.00%
 _dlfo_sort_mappings.part.0                                   48    0.00%
+_IO_new_fgetpos                                              48    0.00%
 putchar                                                      45    0.00%
 strstr                                                       44    0.00%
-btree_destroy                                                42    0.00%
 btree_allocate_node                                          42    0.00%
+btree_destroy                                                42    0.00%
 __libc_cleanup_pop_restore                                   42    0.00%
 lc3_enc_set_ep_mode                                          41    0.00%
 lc3_enc_get_real_bitrate                                     40    0.00%
@@ -4328,8 +4326,8 @@ __pthread_mutex_unlock_usercnt                               31    0.00%
 _IO_default_finish                                           30    0.00%
 __popcountdi2                                                29    0.00%
 _dl_debug_initialize                                         29    0.00%
-lc3_enc_supported_frame_dms                                  29    0.00%
 call_fini                                                    29    0.00%
+lc3_enc_supported_frame_dms                                  29    0.00%
 fec_get_n_pccw                                               28    0.00%
 __sigsetjmp                                                  27    0.00%
 _dl_protect_relro                                            26    0.00%
@@ -4339,21 +4337,21 @@ btree_remove                                                 24    0.00%
 register_pc_range_for_object.constprop.0                     24    0.00%
 __libc_memset_ifunc                                          23    0.00%
 __is_decorate_maps_enabled                                   23    0.00%
-__init_misc                                                  22    0.00%
 _int_free_maybe_trim                                         22    0.00%
+__init_misc                                                  22    0.00%
 strchr                                                       22    0.00%
 __libc_start_call_main                                       21    0.00%
-__pthread_tunables_init                                      20    0.00%
 __libc_memcpy_ifunc                                          20    0.00%
+__pthread_tunables_init                                      20    0.00%
 __libc_lseek                                                 20    0.00%
 __libc_init_first                                            19    0.00%
 _IO_putc                                                     18    0.00%
 _IO_stdfiles_init                                            18    0.00%
 _IO_new_file_setbuf                                          18    0.00%
 __do_global_dtors_aux                                        18    0.00%
+get_pc_range                                                 17    0.00%
 __deregister_frame_info_bases.part.0                         17    0.00%
 tcache_free_init                                             17    0.00%
-get_pc_range                                                 17    0.00%
 _dl_early_allocate                                           16    0.00%
 __set_vma_name                                               16    0.00%
 lc3_enc_set_ep_mode_request                                  16    0.00%
@@ -4364,48 +4362,48 @@ release_registered_frames                                    14    0.00%
 __brk                                                        14    0.00%
 __ctype_init                                                 13    0.00%
 __tls_pre_init_tp                                            13    0.00%
-_dl_handle_execstack_tunable                                 13    0.00%
 strrchr                                                      13    0.00%
+_dl_handle_execstack_tunable                                 13    0.00%
 frame_dummy                                                  12    0.00%
 lc3_dec_supported_wavFormat                                  12    0.00%
-_start                                                       11    0.00%
 __register_frame_info                                        11    0.00%
+_start                                                       11    0.00%
 register_tm_clones                                           11    0.00%
 _dl_allocate_tls_init                                        10    0.00%
 _IO_unsave_markers                                           10    0.00%
 __close_nocancel                                             10    0.00%
 _IO_file_seek                                                10    0.00%
-lc3_enc_get_delay                                             8    0.00%
 lc3_dec_get_delay                                             8    0.00%
+lc3_enc_get_delay                                             8    0.00%
 _IO_feof                                                      8    0.00%
 exit                                                          7    0.00%
 lc3_enc_set_bitrate                                           7    0.00%
 __getrandom_early_init                                        6    0.00%
 __mmap                                                        6    0.00%
 deregister_tm_clones                                          6    0.00%
-load_gp                                                       6    0.00%
 __cxa_atexit                                                  6    0.00%
-lc3_enc_supported_hrmode                                      6    0.00%
+load_gp                                                       6    0.00%
 _IO_file_stat                                                 6    0.00%
-lc3_enc_get_input_samples                                     5    0.00%
+lc3_enc_supported_hrmode                                      6    0.00%
 lc3_dec_get_output_samples                                    5    0.00%
+lc3_enc_get_input_samples                                     5    0.00%
 __mprotect                                                    4    0.00%
 lc3_dec_version                                               4    0.00%
-__sigjmp_save                                                 4    0.00%
-lc3_enc_version                                               4    0.00%
-__deregister_frame_info                                       4    0.00%
 __munmap                                                      4    0.00%
+__sigjmp_save                                                 4    0.00%
+__deregister_frame_info                                       4    0.00%
+lc3_enc_version                                               4    0.00%
 _IO_new_fopen                                                 4    0.00%
 _IO_file_close                                                4    0.00%
 atexit                                                        3    0.00%
 lc3_enc_set_bandwidth                                         3    0.00%
 ___pthread_mutex_unlock                                       2    0.00%
+lc3_enc_exit                                                  2    0.00%
 lc3_dec_exit                                                  2    0.00%
 _setjmp                                                       2    0.00%
-lc3_enc_exit                                                  2    0.00%
-__wrap_main                                                   1    0.00%
-_dl_relocate_static_pie                                       1    0.00%
 _exit                                                         1    0.00%
+_dl_relocate_static_pie                                       1    0.00%
+__wrap_main                                                   1    0.00%
 </pre></div></div>
 </div></div><div class="hs-panel" data-panel="fl" data-label="Floating-point (fl)"><h3 id="floating-point-fl">Floating-point (fl)</h3>
 <h4 id="optimized-function-1">Optimized Function</h4>
